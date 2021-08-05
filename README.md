@@ -532,7 +532,7 @@ Xong rồi, giờ chạy **flutter run** để xem thành quả cuối cùng th�
 
 ## Kết thúc
 Hi vọng qua bài viết của mình giúp ích cho các bạn phần nào việc làm qua  viết plugin cho Flutter.
-Mình để link [Github](https://github.com/tidu01059/sample_plugin_flutter) ở đây để các bạn tham khảo nha.
+Mình để link [Github](https://github.com/tiendung01023/sample_plugin_flutter) ở đây để các bạn tham khảo nha.
 
 Nguồn tham khảo:
 - [Developing packages & plugins](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
