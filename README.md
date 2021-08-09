@@ -385,7 +385,8 @@ class _MyAppState extends State<MyApp> {
 
 Thường khi thêm 1 thư viện vào code iOS, bạn cần sử dụng Cocoapods thêm nó vào Podfile. Nhưng với plugin thì bạn sẽ thêm dependency nó vào **ios/sample_plugin_flutter.podspec**. 
 
-File này cũng giúp bạn khai báo *s.static_framework = true*(1 số thư viện native cần phải khai báo biến này) hay s.ios.deployment_target = '9.0' (để giới hạn version build iOS). 
+*Lưu ý:* Nếu bạn muốn người dùng thư viện cũng có thể xài thư viện iOS này dưới native, bạn cần thêm `s.static_framework = true`. 
+Thêm `s.ios.deployment_target = '9.0'` để giới hạn build version iOS.  
 
 (Nếu bạn chưa biết Cocoapods là gì, bạn có thể tham khảo [tại đây](https://guides.cocoapods.org/using/using-cocoapods.html))
 
@@ -459,6 +460,8 @@ Thế là xong bên iOS, giờ qua phần của Android.
 ### Thêm thư viện cho Android
 
 Trong **Gradle Scripts/build.gradle(Module: android.sample_plugin_flutter)** bạn thêm dòng bên dưới ở cuối file và nhấn **Sync now**
+*Lưu ý:* Nếu bạn muốn người dùng thư viện cũng có thể xài thư viện Android này dưới native, bạn cần thay đổi `implementation` thành `api`.
+
 ```shell
 dependencies {
   implementation 'com.github.cesarferreira:tempo:+'
